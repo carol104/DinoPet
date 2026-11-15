@@ -1,0 +1,47 @@
+# Archivos compilados Java
+*.class
+
+# Archivos de registro
+*.log
+
+# Archivos empaquetados
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Registros de fallos de JVM
+hs_err_pid*
+replay_pid*
+
+# NetBeans
+**/nbproject/private/
+**/nbproject/Makefile-*.mk
+**/nbproject/Package-*.bash
+**/nbproject/profiler-build-impl.xml
+build/
+**/build/
+dist/
+**/dist/
+
+# Otras IDEs y editores (VS Code, IntelliJ IDEA, Eclipse)
+.vscode/
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+**/out/
+.classpath
+.project
+.settings/
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
