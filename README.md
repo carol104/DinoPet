@@ -1,4 +1,4 @@
-# 🦖 Tamagotchi Dinosaurio
+# 🦖 DinoPet
 
 Un simulador interactivo de mascota virtual desarrollado en **Java Swing**, donde deberás adoptar, cuidar y mantener con vida a un pequeño dinosaurio gestionando sus necesidades vitales en tiempo real.
 
