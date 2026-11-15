@@ -5,6 +5,8 @@ public class Nacimiento extends javax.swing.JFrame {
 
     public Nacimiento() {
         initComponents();
+        setTitle("Tamagotchi - Nacimiento");
+        setLocationRelativeTo(null);
     }
 
     @SuppressWarnings("unchecked")

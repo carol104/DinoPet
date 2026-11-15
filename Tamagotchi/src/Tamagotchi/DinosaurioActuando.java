@@ -19,19 +19,17 @@ public class DinosaurioActuando {
     private void cargarImagenes() {
         //dinosaurio bebe
         //0
-        dinosaurios.add(new ImageIcon("src\\Tamagotchi\\Imagenes\\DinosauriosSala\\DinosaurioBebe.png"));
+        dinosaurios.add(Tamagotchi.obtenerImagen("/Tamagotchi/Imagenes/DinosauriosSala/DinosaurioBebe.png"));
         //1
-        dinosaurios.add(new ImageIcon("src\\Tamagotchi\\Imagenes\\DinosaurioHaciendoAlgo\\DinosaurioComiendo.png"));
+        dinosaurios.add(Tamagotchi.obtenerImagen("/Tamagotchi/Imagenes/DinosaurioHaciendoAlgo/DinosaurioComiendo.png"));
         //2
-        dinosaurios.add(new ImageIcon("src\\Tamagotchi\\Imagenes\\DinosaurioHaciendoAlgo\\DinosaurioJugando.png"));
+        dinosaurios.add(Tamagotchi.obtenerImagen("/Tamagotchi/Imagenes/DinosaurioHaciendoAlgo/DinosaurioJugando.png"));
         //3
-        dinosaurios.add(new ImageIcon("src\\Tamagotchi\\Imagenes\\DinosaurioHaciendoAlgo\\DinosaurioRecuperandose.png"));
+        dinosaurios.add(Tamagotchi.obtenerImagen("/Tamagotchi/Imagenes/DinosaurioHaciendoAlgo/DinosaurioRecuperandose.png"));
         //4
-        dinosaurios.add(new ImageIcon("src\\Tamagotchi\\Imagenes\\DinosaurioHaciendoAlgo\\DinosaurioDormido.png"));
+        dinosaurios.add(Tamagotchi.obtenerImagen("/Tamagotchi/Imagenes/DinosaurioHaciendoAlgo/DinosaurioDormido.png"));
         //5
-        dinosaurios.add(new ImageIcon("src\\Tamagotchi\\Imagenes\\DinosaurioHaciendoAlgo\\DinosaurioBaniandose.png"));
-       
-      
+        dinosaurios.add(Tamagotchi.obtenerImagen("/Tamagotchi/Imagenes/DinosaurioHaciendoAlgo/DinosaurioBaniandose.png"));
     }
 
     public List<ImageIcon> getDinosaurios() {

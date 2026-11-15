@@ -14,9 +14,8 @@ public class EstadoAburrido extends Estado {
 
     @Override
     protected void mostrarEstado(JLabel ubicacion) {
-        demostracionDeEstado = new ImageIcon("src\\Tamagotchi\\Imagenes\\DinosaurioMalEstado\\DinosaurioAburrido.png");
+        demostracionDeEstado = Tamagotchi.obtenerImagen("/Tamagotchi/Imagenes/DinosaurioMalEstado/DinosaurioAburrido.png");
         ubicacion.setIcon(demostracionDeEstado);
-
     }
 
     @Override

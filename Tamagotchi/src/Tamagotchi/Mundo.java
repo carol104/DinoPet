@@ -17,6 +17,8 @@ public class Mundo extends javax.swing.JFrame {
     public Mundo() {
 
         initComponents();
+        setTitle("Tamagotchi - Mundo");
+        setLocationRelativeTo(null);
         tamagotchi = Tamagotchi.obtenerInstancia();
         DinosaurioActuando dinosaurioImagen = new DinosaurioActuando();
         dinosaurios = dinosaurioImagen.getDinosaurios();
@@ -30,6 +32,7 @@ public class Mundo extends javax.swing.JFrame {
         jLabel1.setIcon(lugares.get(0));
         jLabel2.setIcon(dinosaurios.get(0));
         barras.setBackground(Color.green); 
+        barras.actualizarBarras(tamagotchi.getNivel_hambre(), tamagotchi.getNivel_suenio(), tamagotchi.getNivel_felicidad(), tamagotchi.getNivel_salud(), tamagotchi.getNivel_limpieza());
 
         tiempo = new Timer(2000, e -> {
             tamagotchi.desgasteNatural();
@@ -161,7 +164,7 @@ public class Mundo extends javax.swing.JFrame {
             jLabel1.setIcon(lugares.get(1));
             jLabel2.setIcon(dinosaurios.get(1));
         }
-
+        barras.actualizarBarras(tamagotchi.getNivel_hambre(), tamagotchi.getNivel_suenio(), tamagotchi.getNivel_felicidad(), tamagotchi.getNivel_salud(), tamagotchi.getNivel_limpieza());
     }//GEN-LAST:event_ComerActionPerformed
 
     private void JugarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JugarActionPerformed
@@ -172,6 +175,7 @@ public class Mundo extends javax.swing.JFrame {
             jLabel1.setIcon(lugares.get(2));
             jLabel2.setIcon(dinosaurios.get(2));
         }
+        barras.actualizarBarras(tamagotchi.getNivel_hambre(), tamagotchi.getNivel_suenio(), tamagotchi.getNivel_felicidad(), tamagotchi.getNivel_salud(), tamagotchi.getNivel_limpieza());
     }//GEN-LAST:event_JugarActionPerformed
 
     private void SanarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SanarActionPerformed
@@ -181,7 +185,7 @@ public class Mundo extends javax.swing.JFrame {
             jLabel1.setIcon(lugares.get(3));
             jLabel2.setIcon(dinosaurios.get(3));
         }
-
+        barras.actualizarBarras(tamagotchi.getNivel_hambre(), tamagotchi.getNivel_suenio(), tamagotchi.getNivel_felicidad(), tamagotchi.getNivel_salud(), tamagotchi.getNivel_limpieza());
     }//GEN-LAST:event_SanarActionPerformed
 
     private void DormirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DormirActionPerformed
@@ -191,7 +195,7 @@ public class Mundo extends javax.swing.JFrame {
             jLabel1.setIcon(lugares.get(4));
             jLabel2.setIcon(dinosaurios.get(4));
         }
-
+        barras.actualizarBarras(tamagotchi.getNivel_hambre(), tamagotchi.getNivel_suenio(), tamagotchi.getNivel_felicidad(), tamagotchi.getNivel_salud(), tamagotchi.getNivel_limpieza());
     }//GEN-LAST:event_DormirActionPerformed
 
     private void AsearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AsearActionPerformed
@@ -201,7 +205,7 @@ public class Mundo extends javax.swing.JFrame {
             jLabel1.setIcon(lugares.get(5));
             jLabel2.setIcon(dinosaurios.get(5));
         }
-
+        barras.actualizarBarras(tamagotchi.getNivel_hambre(), tamagotchi.getNivel_suenio(), tamagotchi.getNivel_felicidad(), tamagotchi.getNivel_salud(), tamagotchi.getNivel_limpieza());
     }//GEN-LAST:event_AsearActionPerformed
 
     public static void mostrarMundo() {

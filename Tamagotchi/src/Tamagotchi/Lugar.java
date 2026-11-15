@@ -15,13 +15,12 @@ public class Lugar {
 
   
     private void cargarImagenes() {
-        escenarios.add(new ImageIcon("src\\Tamagotchi\\Imagenes\\Escenarios\\Sala.png"));
-
-        escenarios.add(new ImageIcon("src\\Tamagotchi\\Imagenes\\Escenarios\\Comedor.png"));
-        escenarios.add(new ImageIcon("src\\Tamagotchi\\Imagenes\\Escenarios\\salaVideojuegos.png"));
-        escenarios.add(new ImageIcon("src\\Tamagotchi\\Imagenes\\Escenarios\\Enfermeria.png"));
-        escenarios.add(new ImageIcon("src\\Tamagotchi\\Imagenes\\Escenarios\\Dormitorio.png"));
-        escenarios.add(new ImageIcon("src\\Tamagotchi\\Imagenes\\Escenarios\\Banio.png"));
+        escenarios.add(Tamagotchi.obtenerImagen("/Tamagotchi/Imagenes/Escenarios/Sala.png"));
+        escenarios.add(Tamagotchi.obtenerImagen("/Tamagotchi/Imagenes/Escenarios/Comedor.png"));
+        escenarios.add(Tamagotchi.obtenerImagen("/Tamagotchi/Imagenes/Escenarios/salaVideojuegos.png"));
+        escenarios.add(Tamagotchi.obtenerImagen("/Tamagotchi/Imagenes/Escenarios/enfermeria.png"));
+        escenarios.add(Tamagotchi.obtenerImagen("/Tamagotchi/Imagenes/Escenarios/Dormitorio.png"));
+        escenarios.add(Tamagotchi.obtenerImagen("/Tamagotchi/Imagenes/Escenarios/Banio.png"));
     }
 
     public List<ImageIcon> getEscenarios() {

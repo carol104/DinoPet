@@ -13,7 +13,7 @@ public class EstadoHambriento extends Estado {
 
     @Override
     protected void mostrarEstado(JLabel ubicacion) {
-        demostracionDeEstado = new ImageIcon("src\\Tamagotchi\\Imagenes\\DinosaurioMalEstado\\DinosaurioHambriento.png");
+        demostracionDeEstado = Tamagotchi.obtenerImagen("/Tamagotchi/Imagenes/DinosaurioMalEstado/DinosaurioHambriento.png");
         ubicacion.setIcon(demostracionDeEstado);
     }
 

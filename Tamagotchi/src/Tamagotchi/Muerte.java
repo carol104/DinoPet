@@ -7,6 +7,8 @@ public class Muerte extends javax.swing.JFrame {
      */
     public Muerte() {
         initComponents();
+        setTitle("Tamagotchi - Fin del Juego");
+        setLocationRelativeTo(null);
     }
 
     /**

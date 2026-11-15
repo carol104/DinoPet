@@ -209,4 +209,25 @@ public class Tamagotchi {
             Muerte.mostrarMuerte();
         }
     }
+
+    public static javax.swing.ImageIcon obtenerImagen(String ruta) {
+        java.net.URL url = Tamagotchi.class.getResource(ruta);
+        if (url != null) {
+            return new javax.swing.ImageIcon(url);
+        }
+        String cleanPath = ruta.startsWith("/") ? ruta.substring(1) : ruta;
+        java.io.File f = new java.io.File(cleanPath);
+        if (f.exists()) return new javax.swing.ImageIcon(f.getAbsolutePath());
+        f = new java.io.File("src/" + cleanPath);
+        if (f.exists()) return new javax.swing.ImageIcon(f.getAbsolutePath());
+        f = new java.io.File("Tamagotchi/src/" + cleanPath);
+        if (f.exists()) return new javax.swing.ImageIcon(f.getAbsolutePath());
+        f = new java.io.File("Tamagotchi/" + cleanPath);
+        if (f.exists()) return new javax.swing.ImageIcon(f.getAbsolutePath());
+        return new javax.swing.ImageIcon();
+    }
+
+    public static void main(String[] args) {
+        Nacimiento.main(args);
+    }
 }
